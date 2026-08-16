@@ -1,0 +1,170 @@
+@import "tailwindcss";
+
+@custom-variant dark (&:where([data-theme="dark"], [data-theme="dark"] *));
+
+:root {
+  --bg: #f8fafc;
+  --surface: #ffffff;
+  --surface-alt: #f8fafc;
+  --fg: #0f172a;
+  --fg-secondary: #334155;
+  --muted: #64748b;
+  --border: #e2e8f0;
+  --border-light: #f1f5f9;
+  
+  /* BPS Official Corporate Branding Palette */
+  --bps-blue: #0095DA;
+  --bps-green: #57B736;
+  --bps-orange: #E77400;
+
+  --accent: #0095DA;
+  --accent-light: rgba(0, 149, 218, 0.08);
+  --accent-border: rgba(0, 149, 218, 0.25);
+  
+  --itb-color: #0095DA;
+  --itk-color: #57B736;
+  --gap-color: #E77400;
+
+  --success: #57B736;
+  --warn: #E77400;
+  --danger: #dc2626;
+  
+  --sidebar-w: 240px;
+  --sidebar-c: 64px;
+  --topbar-h: 56px;
+  
+  --font-display: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  --font-body: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  --font-mono: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  
+  --radius: 14px;
+  --shadow: 0 1px 3px rgba(15, 23, 42, 0.08);
+  --shadow-md: 0 4px 16px rgba(15, 23, 42, 0.1);
+
+  /* Badge: Pos / Positive */
+  --badge-pos-bg: rgba(87, 183, 54, 0.12);
+  --badge-pos-fg: #57B736;
+  --badge-pos-border: rgba(87, 183, 54, 0.25);
+
+  /* Badge: Neg / Negative */
+  --badge-neg-bg: rgba(231, 116, 0, 0.12);
+  --badge-neg-fg: #E77400;
+  --badge-neg-border: rgba(231, 116, 0, 0.25);
+
+  /* Metric Stat Cards */
+  --stat-cyc-bg: rgba(0, 149, 218, 0.1);
+  --stat-cyc-border: rgba(0, 149, 218, 0.3);
+  --stat-cyc-fg: #0095DA;
+  --stat-def-bg: rgba(231, 116, 0, 0.1);
+  --stat-def-border: rgba(231, 116, 0, 0.3);
+  --stat-def-fg: #E77400;
+
+  /* Tactical Bias Box */
+  --bias-bg: rgba(0, 149, 218, 0.08);
+  --bias-border: rgba(0, 149, 218, 0.25);
+  --bias-fg: #0095DA;
+
+  /* Chart Axis & Grid */
+  --chart-axis: #475569;
+  --chart-axis-secondary: #64748b;
+  --chart-grid: #e2e8f0;
+  --chart-label: #0f172a;
+}
+
+[data-theme="dark"] {
+  --bg: #090e15;
+  --surface: #121922;
+  --surface-alt: #1a2332;
+  --fg: #f8fafc;
+  --fg-secondary: #cbd5e1;
+  --muted: #94a3b8;
+  --border: #263140;
+  --border-light: #1e293b;
+
+  --bps-blue: #0095DA;
+  --bps-green: #57B736;
+  --bps-orange: #E77400;
+
+  --accent: #0095DA;
+  --accent-light: rgba(0, 149, 218, 0.18);
+  --accent-border: rgba(0, 149, 218, 0.35);
+
+  --itb-color: #0095DA;
+  --itk-color: #57B736;
+  --gap-color: #E77400;
+
+  --success: #57B736;
+  --warn: #E77400;
+  --danger: #f87171;
+  --shadow: 0 1px 2px rgba(0, 0, 0, 0.4);
+  --shadow-md: 0 8px 24px rgba(0, 0, 0, 0.5);
+  color-scheme: dark;
+
+  /* Badge: Pos / Positive */
+  --badge-pos-bg: rgba(87, 183, 54, 0.2);
+  --badge-pos-fg: #57B736;
+  --badge-pos-border: rgba(87, 183, 54, 0.35);
+
+  /* Badge: Neg / Negative */
+  --badge-neg-bg: rgba(231, 116, 0, 0.2);
+  --badge-neg-fg: #E77400;
+  --badge-neg-border: rgba(231, 116, 0, 0.35);
+
+  /* Metric Stat Cards */
+  --stat-cyc-bg: rgba(0, 149, 218, 0.2);
+  --stat-cyc-border: rgba(0, 149, 218, 0.35);
+  --stat-cyc-fg: #38bdf8;
+  --stat-def-bg: rgba(231, 116, 0, 0.2);
+  --stat-def-border: rgba(231, 116, 0, 0.35);
+  --stat-def-fg: #fb923c;
+
+  /* Tactical Bias Box */
+  --bias-bg: rgba(0, 149, 218, 0.2);
+  --bias-border: rgba(0, 149, 218, 0.35);
+  --bias-fg: #38bdf8;
+
+  /* Chart Axis & Grid */
+  --chart-axis: #94a3b8;
+  --chart-axis-secondary: #64748b;
+  --chart-grid: #263140;
+  --chart-label: #f8fafc;
+}
+
+body {
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  background-color: var(--bg);
+  color: var(--fg);
+}
+
+.font-heading, .font-display, .font-body, .font-mono {
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+}
+
+.tabular-nums {
+  font-variant-numeric: tabular-nums;
+}
+
+.huge-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.custom-scrollbar::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-track {
+  background: var(--surface-alt);
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background: var(--border);
+  border-radius: 3px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb:hover {
+  background: var(--muted);
+}

@@ -1,0 +1,60 @@
+{
+  "Master_Data": {
+    "total_rows": 80,
+    "total_columns": 8,
+    "data_structure": [
+      {
+        "column_name": "Tahun",
+        "data_type": "Number",
+        "is_calculated": false,
+        "formula_structure": null
+      },
+      {
+        "column_name": "Kuartal_Num",
+        "data_type": "Number",
+        "is_calculated": false,
+        "formula_structure": null
+      },
+      {
+        "column_name": "Kuartal",
+        "data_type": "String",
+        "is_calculated": false,
+        "formula_structure": null
+      },
+      {
+        "column_name": "Periode",
+        "data_type": "String",
+        "is_calculated": false,
+        "formula_structure": null
+      },
+      {
+        "column_name": "ITB",
+        "data_type": "Number",
+        "is_calculated": false,
+        "formula_structure": null
+      },
+      {
+        "column_name": "ITK",
+        "data_type": "Number",
+        "is_calculated": false,
+        "formula_structure": null
+      },
+      {
+        "column_name": "Gap_ITB_ITK",
+        "data_type": "Number",
+        "is_calculated": true,
+        "formula_structure": "=ITB - ITK"
+      },
+      {
+        "column_name": "Quadrant",
+        "data_type": "String",
+        "is_calculated": true,
+        "formula_structure": "=IF(AND(ITB>=100, ITK>=100), 'Broad Optimism', IF(AND(ITB>=100, ITK<100), 'Business-led', IF(AND(ITB<100, ITK>=100), 'Consumer-led', 'Broad Pessimism')))"
+      }
+    ],
+    "sample_records": [
+      [2000, 2, "Q2", "2000 Q2", 101.42, 102.15, -0.73, "Broad Optimism"],
+      [2000, 3, "Q3", "2000 Q3", 103.50, 104.10, -0.60, "Broad Optimism"]
+    ]
+  }
+}

@@ -1,0 +1,31 @@
+# Node & JS Dependencies
+node_modules/
+.pnp
+.pnp.js
+
+# Build Outputs
+dist/
+dist-gas/
+build/
+
+# Logs & Debugging
+*.log
+npm-debug.log*
+yarn-debug.log*
+
+# IDE & OS Files
+.DS_Store
+.vscode/
+.idea/
+Thumbs.db
+
+# Python & Environment
+.env
+.env.local
+.venv/
+venv/
+__pycache__/
+*.pyc
+
+# Clasp local auth (do not publish credentials)
+.clasp.json
