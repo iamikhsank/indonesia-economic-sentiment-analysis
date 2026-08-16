@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://iamikhsank.github.io/indonesia-economic-sentiment-analysis/sitemap.xml
