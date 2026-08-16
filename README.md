@@ -1,5 +1,11 @@
 # Indonesia Economic Sentiment Analysis: Business & Consumer Sentiment Dynamics
 
+<p align="center">
+  <img src="https://www.bps.go.id/_next/image?url=%2Fassets%2Flogo-bps.png&w=3840&q=75" alt="Logo Badan Pusat Statistik (BPS) Indonesia" width="160" /><br/>
+  <strong>BADAN PUSAT STATISTIK (BPS) INDONESIA</strong><br/>
+  <em>Official Macroeconomic Sentiment Indicator Dataset (2000 Q2 – 2020 Q1)</em>
+</p>
+
 ![React](https://img.shields.io/badge/React-19.0.0-61DAFB?style=for-the-badge&logo=react&logoColor=black)
 ![TypeScript](https://img.shields.io/badge/TypeScript-5.4.0-3178C6?style=for-the-badge&logo=typescript&logoColor=white)
 ![Vite](https://img.shields.io/badge/Vite-6.4.3-646CFF?style=for-the-badge&logo=vite&logoColor=white)

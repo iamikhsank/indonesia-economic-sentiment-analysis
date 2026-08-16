@@ -9,6 +9,14 @@
 
 ## Executive Summary & SCQA Macro Synthesis
 
+## Business & Consumer Sentiment Dynamics in Indonesia (2000 Q2 – 2020 Q1)
+
+<p align="center">
+  <img src="https://www.bps.go.id/_next/image?url=%2Fassets%2Flogo-bps.png&w=3840&q=75" alt="Logo Badan Pusat Statistik (BPS) Indonesia" width="140" /><br/>
+  <strong>BADAN PUSAT STATISTIK (BPS) INDONESIA</strong><br/>
+  <em>Business &amp; Consumer Sentiment Dynamics Analysis (ITB &amp; ITK)</em>
+</p>
+
 - **Situation**: Across 80 historical quarterly observations (2000 Q2 – 2020 Q1) published by Badan Pusat Statistik (BPS), Indonesia's macro economy maintained a strong expansionary bias. Producer confidence (**Indeks Tendensi Bisnis / ITB**) averaged **106.70** while consumer sentiment (**Indeks Tendensi Konsumen / ITK**) averaged **108.09**, both hovering above the 100 neutral benchmark.
 - **Complication**: Household consumer sentiment (**ITK**) demonstrates significantly higher dispersion and volatility ($\sigma = 7.05$) than corporate producer expectations (**ITB**, $\sigma = 5.15$). This structural variance causes frequent sentiment divergence ($\text{Gap} = \text{ITB} - \text{ITK}$ ranging from $-24.16$ to $+17.88$).
 - **Question**: How do each of the 8 webapp visualizations systematically explain the structural leads, seasonality, distribution density, and cyclical risk factors within Indonesian economic sentiment?
