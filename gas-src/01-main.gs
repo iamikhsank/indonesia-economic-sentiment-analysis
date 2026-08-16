@@ -6,6 +6,7 @@ function doGet(e) {
   try {
     return HtmlService.createHtmlOutputFromFile('webapp')
       .setTitle('Indonesia Economic Sentiment Analysis: Business & Consumer Sentiment Dynamics')
+      .setFaviconUrl('https://lh3.googleusercontent.com/d/184y2ZUwxJn1mXCgPtX_kuomeJaQ461zE=s500')
       .setXFrameOptionsMode(HtmlService.XFrameOptionsMode.ALLOWALL)
       .addMetaTag('viewport', 'width=device-width, initial-scale=1.0');
   } catch (err) {
