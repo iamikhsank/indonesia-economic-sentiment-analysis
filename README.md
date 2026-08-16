@@ -157,6 +157,26 @@ flowchart TD
     end
 ```
 
+### 7.1 Python Data Audit & Validation Engine (`scripts/validate_data.py`)
+The Python data validation engine performs strict automated quality checks before compiling the dataset for production:
+- **Source File Ingestion**: Ingests `BPS_ITB_ITK_Master_Data.xlsx` sheet `Master_Data`.
+- **Integrity & Null Auditing**: Confirms **0 missing values** and **0 duplicate records** across 80 observations (2000 Q2 – 2020 Q1).
+- **Statistical Aggregation**: Computes exact mean ($\text{ITB}=106.70, \text{ITK}=108.09$), standard deviation ($s_{\text{ITB}}=5.15, s_{\text{ITK}}=7.05$), Pearson correlation ($r=0.3695$), and Gap ($\text{ITB}-\text{ITK}$).
+- **Quad-Matrix Rule Engine**: Dynamically tags each row into 4 regimes (*Broad Optimism*, *Business-led*, *Consumer-led*, *Broad Pessimism*).
+- **Validated JSON Export**: Exports authenticated data array to `src/data/master_sentiment_data.json`.
+
+### 7.2 Python Static Visual Generator (`scripts/generate_visuals.py`)
+Chained directly to `validate_data.py`, this script generates 9 publication-ready static PNG visual artifacts saved in `output/Indonesia_Economic_Sentiment_Visuals/`:
+1. `01_line_chart_itb_itk.png`: 20-Year dual line trend chart.
+2. `02_annual_average.png`: Annual average bar chart comparison.
+3. `03_sentiment_gap.png`: Bidirectional sentiment gap bar chart.
+4. `04_quadrant_itb_itk.png`: 4-Quadrant scatter plot matrix.
+5. `05_heatmap_itb.png`: ITB intensity heatmap matrix.
+6. `06_heatmap_itk.png`: ITK intensity heatmap matrix.
+7. `07_distribution_kde.png`: Kernel Density Estimation curve.
+8. `08_boxplot_quarterly.png`: Q1–Q4 quarterly boxplots.
+9. `09_statistical_overview.png`: High-density summary dashboard.
+
 ---
 
 ## 8. Repository Directory Tree Structure
