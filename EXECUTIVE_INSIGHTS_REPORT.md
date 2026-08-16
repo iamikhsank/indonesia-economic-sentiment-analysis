@@ -12,7 +12,7 @@
 ## Business & Consumer Sentiment Dynamics in Indonesia (2000 Q2 – 2020 Q1)
 
 <p align="center">
-  <img src="https://www.bps.go.id/_next/image?url=%2Fassets%2Flogo-bps.png&w=3840&q=75" alt="Logo Badan Pusat Statistik (BPS) Indonesia" width="140" /><br/>
+  <img src="./logo-bps.webp" alt="Logo Badan Pusat Statistik (BPS) Indonesia" width="140" /><br/>
   <strong>BADAN PUSAT STATISTIK (BPS) INDONESIA</strong><br/>
   <em>Business &amp; Consumer Sentiment Dynamics Analysis (ITB &amp; ITK)</em>
 </p>

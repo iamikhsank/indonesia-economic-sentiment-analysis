@@ -45,7 +45,10 @@ export const Header: React.FC<HeaderProps> = ({
         {/* Left Side: Official BPS Logo Image (Enlarged) + Title & Subtitle */}
         <div className="flex items-center space-x-4">
           <img
-            src="https://www.bps.go.id/_next/image?url=%2Fassets%2Flogo-bps.png&w=3840&q=75"
+            src="./logo-bps.webp"
+            onError={(e) => {
+              (e.target as HTMLImageElement).src = "https://www.bps.go.id/_next/image?url=%2Fassets%2Flogo-bps.png&w=3840&q=75";
+            }}
             alt="Logo Badan Pusat Statistik (BPS)"
             className="w-12 h-12 sm:w-14 sm:h-14 rounded-xl object-contain bg-white p-1.5 border border-[var(--border)] shadow-md shrink-0 transition-all hover:scale-105"
           />
