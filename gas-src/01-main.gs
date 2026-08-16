@@ -5,7 +5,7 @@
 function doGet(e) {
   try {
     return HtmlService.createHtmlOutputFromFile('webapp')
-      .setTitle('Indonesian Economic Sentiment Dynamics (ITB & ITK) Dashboard')
+      .setTitle('Indonesia Economic Sentiment Analysis: Business & Consumer Sentiment Dynamics')
       .setXFrameOptionsMode(HtmlService.XFrameOptionsMode.ALLOWALL)
       .addMetaTag('viewport', 'width=device-width, initial-scale=1.0');
   } catch (err) {

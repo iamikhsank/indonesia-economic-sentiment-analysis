@@ -1,4 +1,4 @@
-# Indonesian Economic Sentiment Dynamics (BPS ITB & ITK Analysis)
+# Indonesia Economic Sentiment Analysis: Business & Consumer Sentiment Dynamics
 
 ![React](https://img.shields.io/badge/React-19.0.0-61DAFB?style=for-the-badge&logo=react&logoColor=black)
 ![TypeScript](https://img.shields.io/badge/TypeScript-5.4.0-3178C6?style=for-the-badge&logo=typescript&logoColor=white)
@@ -114,6 +114,12 @@ $$f(x) = \frac{1}{n h} \sum_{i=1}^{n} K\left(\frac{x - x_i}{h}\right), \quad \te
 | Sentiment Gap | `Gap_ITB_ITK` | Numeric | -24.16 – +17.88 | 0 | Positive = ITB > ITK |
 | Quadrant Regime | `Quadrant` | Categorical | 4 Regimes | Broad Optimism | Regime Classification |
 | Periode Observasi | `Periode` | String | 2000 Q2 – 2020 Q1 | 80 Quarters | BPS Quarterly Publication |
+
+### 6.1 Official BPS Data Source & Publication Citation
+The raw master dataset is derived directly from the official publication tables of **Badan Pusat Statistik (BPS) Indonesia**:
+- **Official BPS Publication Table**: [BPS Indeks Tendensi Bisnis (ITB) dan Indeks Tendensi Konsumen (ITK)](https://www.bps.go.id/id/statistics-table/2/NDMjMg==/indeks-tendensi-bisnis--itb--dan-indeks-tendensi-konsumen--itk-.html)
+- **Direct Source URL**: `https://www.bps.go.id/id/statistics-table/2/NDMjMg==/indeks-tendensi-bisnis--itb--dan-indeks-tendensi-konsumen--itk-.html`
+- **Data Release Status**: Data Final (Tidak Direvisi) | 80 Observations (2000 Q2 – 2020 Q1)
 
 ---
 
