@@ -73,6 +73,8 @@ The platform incorporates the **Minto Pyramid Principle** and **SCQA (Situation,
 - **Question**: Is Indonesian economic sentiment primarily producer-driven or consumer-driven, and how resilient is optimism across economic cycles?
 - **Answer**: Sentiment is predominantly **Consumer-led** (ITK > ITB in 60% of quarters), with **Broad Optimism** encompassing 86.25% of historical observations. Policy must focus on sustaining consumer purchasing power during producer cost shocks.
 
+> 📖 **Full Analytical Insights Report**: Read the complete MBB-grade macroeconomic analysis in [`EXECUTIVE_INSIGHTS_REPORT.md`](file:///d:/Antigravity/Gemini%20Project%20-%20GEM/Business-and-Consumer-Sentiment-Dynamics/EXECUTIVE_INSIGHTS_REPORT.md).
+
 ---
 
 ## 4. Institutional Stakeholder Use Cases
